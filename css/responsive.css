@@ -1,0 +1,38 @@
+/*szerokosc hedaera, co wplywa na fote*/
+
+@media screen and (min-width: 992px) {
+    #head {
+        height: 90vh;
+    }
+}
+
+@media screen and (max-width: 992px) and (min-width: 768px) {
+    #head {
+        height: 90vh;
+    }
+}
+
+@media screen and (max-width: 768px) and (min-width: 480px) {
+    #head {
+        height: 85vh;
+        background-position: bottom;
+    }
+    #bio p {
+        width: 60%;
+        margin-left: 20%;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    /**/
+    #head {
+        height: 85vh;
+        background-position: bottom;
+    }
+    #bio p {
+        width: 60%;
+        margin-left: 20%;
+    }
+  
+}

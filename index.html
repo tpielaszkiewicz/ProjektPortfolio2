@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <!--    metatag potrzebny zeby działały responsywy + czcionki-->
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,200,400&amp;subset=latin-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,200,400&amp;subset=latin-ext" rel="stylesheet">
+    <!--font awesome zeby nam działały unicody-->
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <!--    pliki ze stylami css-->
+
+    <!--Skompresowany BootstrapCSS dodany lokalnie -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+</head>
+
+<body>
+
+    <nav id="menu" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                </button>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#bio" class=" nav-link  scrolled-link">o mnie</a></li>
+                    <li><a href="#skills" class=" nav-link  scrolled-link">umiejętności</a></li>
+                    <li><a href="#portfolio" class=" nav-link  scrolled-link">portfolio</a></li>
+                    <li><a href="#foot" class=" nav-link  scrolled-link">kontakt</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!--glowny div z obrazkiem i naglowkiem -->
+    <header id="head" class="page-header">
+        <div id="main-name">
+            <h1 id="main-header-text" class="name">
+                Tomasz
+                <span class="name">Pielaszkiewicz</span>
+            </h1>
+            <h2 id="sub-header-text" class="name">Front-End Developer</h2>
+        </div>
+    </header>
+    <!--    sekcja o mnie, nagłówek plus dwa divy po 50% (w responsywach opis spada pod fote)-->
+    <section id="bio">
+        <div class="container-fluid">
+            <div class="row">
+                <h2 class="sec-head">
+                    O
+                    <span class="name">mnie</span>
+                </h2>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-6">
+                    <figure id="portrait">
+                        <img src="img/jan-nowak2.jpg" alt="Main">
+                    </figure>
+                </div>
+
+                <div class="col-xs-12 col-sm-6">
+                    <div id="descr">
+                        <p id="bio-descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, eos numquam velit pariatur nihil libero, non voluptatem mollitia voluptas, dolores ipsam unde odit natus quia! Itaque fugit illo sapiente, laborum! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos beatae, sint ut impedit commodi, cupiditate minima iure. Porro qui consectetur amet delectus incidunt consequuntur accusamus doloremque illum dolores! Voluptas, quasi. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="container-fluid">
+            <div class="row">
+                <h2 class="sec-head">
+                    <!--        w ramach jednego tekstu sobie różnicujemy-->
+                    Moje
+                    <span class="name">umiejętności</span>
+                </h2>
+            </div>
+            <div class="row">
+                <p id="skills-descr">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni iste nam possimus perspiciatis, id, facere magnam maxime esse ducimus laudantium! Amet harum velit enim cum debitis at perspiciatis, sapiente dolor?
+                </p>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-3">
+                    <figure class="icons">
+                        <img src="icons/css3.png" alt="Main">
+                        <figcaption>CSS3</figcaption>
+                    </figure>
+                </div>
+
+                <div class="col-xs-12 col-sm-3">
+                    <figure class="icons">
+                        <img src="icons/html5.png" alt="Main">
+                        <figcaption>HTML 5</figcaption>
+                    </figure>
+                </div>
+
+                <div class="col-xs-12 col-sm-3">
+                    <figure class="icons">
+                        <img src="icons/jquery.png" alt="Main">
+                        <figcaption>jQuery</figcaption>
+                    </figure>
+                </div>
+
+                <div class="col-xs-12 col-sm-3">
+                    <figure class="icons">
+                        <img src="icons/js.png" alt="Main">
+                        <figcaption>JavaScript</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio">
+
+        <div class="container-fluid">
+            <div class="row">
+                <h2 class="sec-head">
+                    Moje
+                    <span class="name">portfolio</span>
+                </h2>
+            </div>
+            <div id="port-sec" class="row">
+                <div class="col-xs-12 col-sm-6 col-md-4 portfolio">
+                    <div id="port1" class="port-cont">
+                        <div id="content1" class="content-hidden">
+                            <div class="inner-content">
+                                <div class="content-pos">
+                                    <h3>Lorem Ipsum</h3>
+                                    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil exercitationem nesciunt, itaque tempore cum cupiditate necessitatibus eum ducimus possimus sint officiis harum blanditiis quo eius doloremque, corrupti maiores nemo illo.</p>
+                                    <h4>Wykorzystane technologie:</h4>
+                                    <p>HTML5, CSS3, JavaScript, Bootstrap</p>
+                                    <i class="fa">&#xf1cb;</i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-md-4 portfolio">
+                    <div id="port2" class="port-cont">
+                        <div id="content2" class="content-hidden">
+                            <div class="inner-content">
+                                <div class="content-pos">
+                                    <h3>Lorem Ipsum</h3>
+                                    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                    <h4>Wykorzystane technologie:</h4>
+                                    <p>HTML5, CSS3, JavaScript, Bootstrap</p>
+                                    <i class="fa">&#xf260;</i>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-12 col-md-4 portfolio">
+                    <div id="port3" class="port-cont">
+                        <div id="content3" class="content-hidden">
+                            <div class="inner-content">
+                                <div class="content-pos">
+                                    <h3>Lorem</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At vel praesentium voluptate perspiciatis sapiente ipsum quaerat illo distinctio beatae, eligendi! Rerum tempore maiores fuga odit quidem aliquid ipsum iste nostrum.</p>
+                                    <h4>Wykorzystane technologie:</h4>
+                                    <p>HTML5, CSS3, JavaScript, Bootstrap</p>
+                                    <i class="fa">&#xf27c;</i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <footer id="foot">
+
+        <div class="container-fluid">
+            <div class="row">
+                <h2 class="sec-head">
+                    Tomasz
+                    <span class="name">Pielaszkiewicz</span>
+                </h2>
+            </div>
+            <div id="port-sec" class="row">
+
+                <div class="col-xs-12 col-sm-6">
+                    <address id="contact">
+                        <p id="contact-content">
+                         ul. Mostowa 6/13<br /> 31-061 Kraków<br />
+                        </p>
+                        <p id="phone-mail">
+                        tel. 654 987 453 <br/>
+                        e-mail:
+                        <a href="mailto:tpielaszkiewicz@gmail.com">tpielaszkiewicz@gmail.com</a>
+                        </p>
+                        <div id="icons">
+                            <!-- iikony przez dedykowane klasy font awesome te klasy automatycznie sobie biorą to co im trzeba do obrazka-->
+                            <a href="#" class="fa fa-facebook"></a>
+                            <a href="#" class="fa fa-twitter"></a>
+                            <a href="#" class="fa fa-google"></a>
+                            <a href="#" class="fa fa-linkedin"></a>
+                        </div>
+                    </address>
+                </div>
+                <div class="col-xs-12 col-sm-6">
+                    <form id="form" action="https://formspree.io/tpielaszkiewicz@gmail.com" method="POST">
+                        <input type="text" name="name" id="name" placeholder="Imię i nazwisko"><br>
+                        <input type="email" id="email" name="_replyto" placeholder="Podaj email"><br>
+                        <textarea maxlength="100" name="textarea" id="textarea" cols="30" rows="5" placeholder="Wiadomośc"></textarea><br>
+                        <input type="submit" value="Send">
+                    </form>
+                </div>
+
+
+            </div>
+        </div>
+
+    </footer>
+    <div id="copyright">
+        <p>Copright Tomasz Pielaszkiewicz &copy;</p>
+    </div>
+
+    <!--jQuery(wymagany dla BootstrapJavaScript) -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <!--Skompresowany plik BootstrapJavaScriptdodany lokalnie -->
+    <script src="js/bootstrap.min.js"></script>
+    <!--i nasz skrypt na koniec :) -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
